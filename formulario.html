@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pedido | Vortex Hoodie</title>
+</head>
+<body>
+<nav style="background-color:#ffffff; border-bottom:1px solid #ddd; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+  <div>
+    <a href="index.html"><img src="vortex.png" alt="Logo Vortex Hoodie" style="height: 40px;"></a>
+  </div>
+  <div style="display: flex; gap: 20px; font-family: sans-serif;">
+    <a href="index.html" style="text-decoration:none; color:#003366;">Inicio</a>
+    <a href="catalogo.html" style="text-decoration:none; color:#003366;">Catálogo</a>
+    <a href="formulario.html" style="text-decoration:none; color:#003366;">Formulario</a>
+    <a href="proceso.html" style="text-decoration:none; color:#003366;">Proceso</a>
+  </div>
+</nav>
+<header style="text-align: center; padding: 20px;">
+  <img src="vortex.png" alt="Vortex Hoodie" style="height: 60px;">
+</header>
+<div style="max-width: 600px; margin: 0 auto;">
+  <h2 style="text-align:center;">Formulario de Pedido</h2>
+  <form>
+    <label>Nombre completo</label><input type="text" required>
+    <label>Correo electrónico</label><input type="email" required>
+    <label>Talla</label><select><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+    <label>Color</label><input type="text" required>
+    <label>Nombre en la sudadera</label><input type="text" required>
+    <label>Comentarios</label><textarea rows="4"></textarea>
+    <button type="submit" style="margin-top:10px;">Enviar Pedido</button>
+  </form>
+</div>
+</body>
+</html>
