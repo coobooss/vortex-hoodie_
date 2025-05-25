@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Pedido | Vortex Hoodie</title>
+</head>
+<body>
+  <nav style="background-color:#ffffff; border-bottom:1px solid #ddd; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <a href="index.html"><img src="vortex.png" alt="Logo Vortex Hoodie" style="height: 40px;"></a>
+    </div>
+    <div style="display: flex; gap: 20px; font-family: sans-serif;">
+      <a href="index.html" style="text-decoration:none; color:#003366;">Inicio</a>
+      <a href="catalogo.html" style="text-decoration:none; color:#003366;">Catálogo</a>
+      <a href="proceso.html" style="text-decoration:none; color:#003366;">Proceso</a>
+    </div>
+  </nav>
+
+  <main style="font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px;">
+    <h1 style="text-align: center;">Formulario de Pedido</h1>
+    <p style="text-align: center;">Completa los siguientes datos para realizar tu pedido personalizado.</p>
+
+    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 16px; margin-top: 30px;">
+      <label>Nombre completo:
+        <input type="text" name="nombre" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+      </label>
+      <label>Correo electrónico:
+        <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+      </label>
+      <label>Colegio:
+        <input type="text" name="colegio" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+      </label>
+      <label>Talla:
+        <select name="talla" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+          <option value="">Selecciona una talla</option>
+          <option value="S">S (30€)</option>
+          <option value="M">M (31,5€)</option>
+          <option value="L">L (32€)</option>
+          <option value="XL">XL (33€)</option>
+        </select>
+      </label>
+      <label>Color:
+        <input type="text" name="color" required placeholder="Ej: rojo, azul, verde..." style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+      </label>
+      <label>Nombre a estampar en la sudadera:
+        <input type="text" name="nombre_sudadera" required style="width: 100%; padding: 10px; border: 1px solid #ccc;">
+      </label>
+
+      <button type="submit" style="background-color: #003366; color: white; padding: 12px; border: none; cursor: pointer; margin-top: 10px;">
+        Enviar Pedido
+      </button>
+    </form>
+  </main>
+</body>
+</html>
