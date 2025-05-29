@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pago | Vortex Hoodie</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+
+    .top-bar {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .top-bar img {
+      height: 50px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #003366;
+    }
+
+    .pago-opciones {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .pago-btn {
+      background-color: #003366;
+      color: white;
+      padding: 16px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+      width: 250px;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    .pago-btn:hover {
+      background-color: #001f4d;
+    }
+
+    .detalle-pago {
+      font-size: 15px;
+      color: #444;
+    }
+
+    iframe {
+      margin-top: 15px;
+      border: none;
+      width: 300px;
+      height: 150px;
+    }
+
+    form.tarjeta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    form.tarjeta input {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+    }
+
+    form.tarjeta button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form.tarjeta button:hover {
+      background-color: #001f4d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="index.html"><img src="vortex.png" alt="Vortex Hoodie"></a>
+  </div>
+
+  <main>
+    <h1>Selecciona tu forma de pago</h1>
+
+    <div class="pago-opciones">
+      <!-- Bizum -->
+      <div>
+        <div class="pago-btn">Bizum</div>
+        <div class="detalle-pago">Envía el importe a <strong>600 123 456</strong> e indica tu nombre en el concepto.</div>
+      </div>
+
+      <!-- PayPal -->
+      <div>
+        <div class="pago-btn">PayPal</div>
+        <iframe src="https://www.paypal.com/donate/buttons" title="Botón de PayPal"></iframe>
+        <div class="detalle-pago">Pulsa para pagar con tu cuenta PayPal o tarjeta asociada.</div>
+      </div>
+
+      <!-- Tarjeta bancaria -->
+      <div>
+        <div class="pago-btn">Tarjeta Bancaria</div>
+        <form class="tarjeta">
+          <input type="text" placeholder="Número de tarjeta" required>
+          <input type="text" placeholder="MM/AA" required>
+          <input type="text" placeholder="CVC" required>
+          <button type="submit">Pagar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
