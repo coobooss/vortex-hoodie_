@@ -17,7 +17,7 @@
     }
 
     .top-bar img {
-      height: 60px;
+      height: 50px;
     }
 
     main {
@@ -80,15 +80,15 @@
     <h1>Formulario de Pedido</h1>
     <p>Completa los siguientes datos para realizar tu pedido personalizado.</p>
 
-    <form>
+    <form action="pago.html" method="get">
       <label>Nombre completo:</label>
-      <input type="text" required>
+      <input type="text" name="nombre" required>
 
       <label>Correo electrónico:</label>
-      <input type="email" required>
+      <input type="email" name="email" required>
 
       <label>Talla:</label>
-      <select required>
+      <select name="talla" required>
         <option value="">Selecciona una talla</option>
         <option value="S">S</option>
         <option value="M">M</option>
@@ -97,10 +97,10 @@
       </select>
 
       <label>Color:</label>
-      <input type="text" placeholder="Ej: rojo, azul, verde..." required>
+      <input type="text" name="color" placeholder="Ej: rojo, azul, verde..." required>
 
       <label>Nombre a estampar en la sudadera:</label>
-      <input type="text" required>
+      <input type="text" name="nombre_estampado" required>
 
       <button type="submit">Enviar Pedido</button>
     </form>
@@ -108,3 +108,4 @@
 
 </body>
 </html>
+
